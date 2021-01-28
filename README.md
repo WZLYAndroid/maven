@@ -5,11 +5,10 @@
 	
 	allprojects {
     	repositories {
-			maven { url 'https://github.com/WZLYAndroid/maven/raw/main' }
-        	//maven { url 'https://wzlyandroid.github.io/maven' }//github pages 待确认中
+			maven { url 'https://wzlyandroid.github.io/maven' }
     	}
 	}
-
+	
 项目中依赖所需库, 以 test 库为例：
 
 	dependencies {
