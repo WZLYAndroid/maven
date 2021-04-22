@@ -6,11 +6,17 @@
 	allprojects {
     	repositories {
 			maven { url 'https://wzlyandroid.github.io/maven' }
+ 			//maven { url 'https://github.com/WZLYAndroid/maven/raw/main' }
+			//maven { url 'file://' + new File(rootDir.parentFile, 'maven').absolutePath }
     	}
 	}
 	
-项目中依赖所需库, 以 test 库为例：
+项目中依赖所需库：
 
 	dependencies {
-    	implementation 'com.wzly.module:test:0.0.1'
+    
+  		implementation 'com.wzly.module:widget:1.0.0'
+   		implementation 'com.wzly.module:base:1.0.0'
+		implementation 'com.wzly.module:http-retrofit:1.0.0'
+
 	} 
